@@ -2,7 +2,7 @@
 
 
 /**
- * main - print " all single digit numbers of base 10 starting from 0",
+ * main - print "all single digit numbers of base 10 starting from 0,"
  *  followed by a new line.
  *  Return: 0
  */
@@ -10,6 +10,7 @@
 int main(void)
 
 {
+
 	int num;
 
 	for(num = 0; num < 10; num++)
@@ -18,6 +19,6 @@ int main(void)
 
 	putchar('\n');
 
-	Return (0);
+	return (0);
 
 }
