@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 
 /**
@@ -38,4 +38,3 @@ void print_triangle(int size)
 	_putchar('\n');
 
 }
-
