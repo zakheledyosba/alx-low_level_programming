@@ -1,12 +1,5 @@
-#ifndef main.h
-#define main.h
-
-/*
- * File: holberton.h
- * Auth: Brennan D Baraban
- * Desc: Header file containing prototypes for all functions
- *       used in the 0x03-more_functions_nested_loops directory.
- */
+#ifndef MAIN_H
+#define MAIN_H
 
 int _putchar(char);
 int _isupper(int c);
