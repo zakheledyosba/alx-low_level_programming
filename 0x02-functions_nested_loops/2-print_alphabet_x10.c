@@ -7,36 +7,24 @@
  * Return: 0
  */
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 
 {
 
-		char ch;
+	int count = 0;
 
-		int i;
+	char letter;
 
-		i = 0;
+	while (count++ <= 9)
 
-		while (i < 10)
+	{
 
-		{
+		for (letter = 'a'; letter <= 'z'; letter++)
 
-			ch = 'a';
+			_putchar(letter);
 
-			while (ch <= 'z')
+		_putchar('\n');
 
-			{
-
-				_putchar(ch);
-
-				ch++;
-
-			}
-
-			_putchar('\n');
-
-			i++;
-
-		}
+	}
 
 }
