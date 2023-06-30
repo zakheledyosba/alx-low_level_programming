@@ -17,13 +17,13 @@ int main(void)
  
        	int *p;
 
-  a[2] = 1024;
+	  a[2] = 1024;
 
-  p = &n;
+	  p = &n;
 
-  *(p + 5) = 98;
+	  *(p + 5) = 98;
 
-  printf("a[2] = %d\n", a[2]);
+	  printf("a[2] = %d\n", a[2]);
 
   return (0);
 
