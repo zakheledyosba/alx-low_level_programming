@@ -2,9 +2,9 @@
 
 
 /**
- * _strstr - function that locates a substring.
+ * _strstr - "function that locates a substring.
  *@haystack: first value -char
- *@needle: second value - char
+ *@needle: second value - char"
  *
  * Return: char with result
  */
