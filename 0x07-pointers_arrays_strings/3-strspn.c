@@ -1,54 +1,44 @@
 #include "main.h"
 
 
-/*
- * _strspn - "finds length of prefix substring
+/**
+ * _strspn - function that gets the length of a prefix substring
+ *@s: first value -char
+ *@accept: second value - char
  *
- * @s: string to check
- * @accept: substring of chars"
- *
- * Return: n bytes in intial segment of s which
- * consist only of bytes from accept
+ * Return: char with result
  */
 
 unsigned int _strspn(char *s, char *accept)
 
 {
 
-	int i;
+	int j = 0, i = 0;
 
-	int consistC = 0;
+	unsigned int a = 0;
 
-	int prevC;
-
-	while (*s)
+	while (s[i] != ' ' && s[i] != '\0')
 
 	{
 
-		i = 0;
-
-		prevC = consistC;
-
-		while (*(accept + i) != '\0')
+		while (accept[j] != '\0')
 
 		{
 
-			if  (*(accept + i) == *s)
+			if (s[i] == accept[j])
 
-				consistC++;
+				a++;
 
-			i++;
+			j++;
 
 		}
 
-	if (prevC == consistC)
+		i++;
 
-		break;
+		j = 0;
 
-	s++;
+	}
 
-	}	
-
-	return (consistC);
+	return (a);
 
 }
