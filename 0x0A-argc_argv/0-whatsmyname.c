@@ -1,0 +1,20 @@
+#include "stdio.h"
+#include "main.h"
+
+
+/*
+ * main - "program that prints its name , followed by a new line"
+ * @argc : number of argurments
+ * @argv ; array wiyh the arguments
+ *
+ * Return : always 0
+ */
+
+int main(int argc, char *agrv[])
+
+{
+	argc(void);
+	printf("%S\n", agrv[0]);
+	return (0);
+
+}
