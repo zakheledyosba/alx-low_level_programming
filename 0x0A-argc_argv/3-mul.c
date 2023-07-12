@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 
 	char c[] = "Error";
 
-	if (argc != 3)
+	if (argc < 3)
 
 	{
 
