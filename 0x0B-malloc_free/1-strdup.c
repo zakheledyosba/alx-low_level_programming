@@ -14,23 +14,23 @@ char *_strdup(char *str)
 
 	char *ptstr;
 
-	int str_len = 0;
+	int n = 0;
 
-	while (str[str_len] != "\0")
+	while (str[n] != '\0')
 	{
-		str_len++;
+		n++;
 	}
 
-	ptstr = malloc((str_len * sizeof(char)) + 1);
+	ptstr = malloc((n * sizeof(char)) + 1);
 
-	if (str_len == NULL)
+	if (n == NULL)
 	{
 		return (NULL);
 	}
 
 	int i
 
-	for (i = 0;str[i] != "\0"; i++)
+	for (i = 0;str[i] != '\0'; i++)
 	{
 		ptstr[i] = str[i];
 	}
