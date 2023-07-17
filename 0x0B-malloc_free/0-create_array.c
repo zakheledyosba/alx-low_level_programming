@@ -31,8 +31,8 @@ char *create_array(unsigned int size, char c)
 	}
 
 	a = 0;
-	
-	while(a < size)
+
+	while (a < size)
 
 	{
 
