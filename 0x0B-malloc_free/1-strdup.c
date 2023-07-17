@@ -13,9 +13,9 @@ char *_strdup(char *str)
 {
 
 	char *ptstr;
-
+	
 	int n = 0;
-
+ 
 	while (str[n] != '\0')
 	{
 		n++;
@@ -28,7 +28,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	int i
+	int i;
 
 	for (i = 0;str[i] != '\0'; i++)
 	{
