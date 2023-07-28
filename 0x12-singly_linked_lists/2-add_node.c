@@ -9,16 +9,13 @@
  */
 
 int len(const char *str)
-
 {
-
 	int x;
 
 	if (str == NULL)
 		return (0);
 	for (x = 0; str[x] != '\0'; x++);
 	return (x);
-
 }
 
 /**
@@ -30,22 +27,13 @@ int len(const char *str)
  */
 
 list_t *add_node(list_t **head, char *str)
-
 {
-
 	list_t *new_node = (list_t *) malloc(sizeof(list_t));
-
 	if (new_node == NULL)
 		return (NULL);
-
 	new_node->str = strdup(str);
-
 	new_node->len =  len(str);
-
 	new_node->next = (*head);
-
 	(*head) = new_node;
-
 	return (*head);
-
 }
