@@ -15,7 +15,7 @@ int len(const char *str)
 
 	if (str == NULL)
 		return (0);
-	for (x = 0; str[count] != '\0'; x++);
+	for (x = 0; str[x] != '\0'; x++);
 	return (x);
 }
 
