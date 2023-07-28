@@ -1,12 +1,15 @@
-int _putchar(char c);
-void _puts_recursion(char *s);
-void _print_rev_recursion(char *s);
+#ifndef MAIN_H
+#define MAIN_H
+
 int _strlen_recursion(char *s);
 int factorial(int n);
 int _pow_recursion(int x, int y);
+int _putchar(char c);
+int is_prime_number(int prime);
 int _sqrt_recursion(int n);
-int is_prime_number(int n);
 int is_palindrome(char *s);
-int helper(int a, int b);
-int primeFinder(int a, int b);
-int palindromeChecker(char *str, int len, int i);
+int another(int a, int b);
+void _puts_recursion(char *s);
+void _print_rev_recursion(char *s);
+
+#endif
