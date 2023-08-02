@@ -1,6 +1,6 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
 
 /**
@@ -12,38 +12,23 @@
 char *_strdup(char *str)
 {
 
-	char *ptstr;
+	char *x;
+	int i, r = 0;
 
-	int i;
+	if (str == NULL)
+		return (NULL);
+	i = 0;
+	
+	while (str[i] != '\0')
+		i++;
 
-	int n = 0;
+	aaa = malloc(sizeof(char) * (i + 1));
 
-	while (str[n] != '\0')
-
-	{
-
-		n++;
-
-	}
-
-	ptstr = malloc((n * sizeof(char)) + 1);
-
-	if (ptstr == NULL)
-
-	{
-
+	if (x == NULL)
 		return (NULL);
 
-	}
+	for (r = 0; str[r]; r++)
+		x[r] = str[r];
 
-	for (i = 0;str[i] != '\0';  i++)
-
-	{
-
-		ptstr[i] = str[i];
-
-	}
-
-	return (ptstr);
-
+	return (x);
 }
