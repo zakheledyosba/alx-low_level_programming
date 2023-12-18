@@ -2,21 +2,16 @@
 
 
 /**
- * get_bit -"returns the value of a bit at an index in a decimal number
- * @n: number to search
- * @index: index of the bit"
- *
- * Return: value of the bit
+ * set_bit - the given index sets a bit 1
+ * @n: it's nothing but a pointer to change a number
+ * @index: An index that set a bit 1
+ * Return: 1  success, -1 fail
  */
 
-int get_bit(unsigned long int n, unsigned int index)
+int set_bit(unsigned long int *n, unsigned int index)
 {
-	int bit_val;
-
 	if (index > 63)
 		return (-1);
-
-	bit_val = (n >> index) & 1;
-
-	return (bit_val);
+	*n = ((1UL << index) | *n);
+	return (1);
 }

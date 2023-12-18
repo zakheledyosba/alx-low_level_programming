@@ -2,17 +2,17 @@
 
 
 /**
- * set_bit -"sets a bit at a given index to 1
- * @n: pointer to the number to change
- * @index: index of the bit to set to 1
- * Return: 1 for success, -1 for failure
+ * clear_bit - the value of abit to be set to a given bit to 0
+ * @n: A pointer that/to change the number to
+ * @index: An index that clears a bit
+ *
+ * Return: 1 just success, -1 fail
  */
 
-int set_bit(unsigned long int *n, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	if (index > 63)
 		return (-1);
-
-	*n = ((1UL << index) | *n);
+	*n = (~(1UL << index) & *n);
 	return (1);
 }

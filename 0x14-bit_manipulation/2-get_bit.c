@@ -1,18 +1,17 @@
 #include "main.h"
 
 /**
- * get_endianness - prog checks the endianness
- * Return: 0
+ * get_bit - it takes the value of a bit of index in a decimal number be return
+ * @n: search for index or number or integer
+ * @index: numbers of bit of index(s)
+ * Return: The bit
  */
-
-int get_endianness(void)
-
+int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int i;
-	char *b;
+	int amonut_of_bit_values;
 
-	i = 1;
-	b = (char *) &i;
-
-	return ((int)*b);
+	if (index > 63)
+		return (-1);
+	amonut_of_bit_values = (n >> index) & 1;
+	return (amonut_of_bit_values);
 }
